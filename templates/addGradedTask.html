@@ -1,0 +1,18 @@
+<h2>Add new Graded Task</h2>
+We understand as a graded task any test or practice that will be marked by teacher and should be reflected in the final mark.
+
+<form id="newGradedTask"  role="form" aria-labelledby="newGradedTask">
+  <label for="idTaskName">Task name:</label>
+  <br>
+  <input role="input" aria-required="true" aria-invalid="true" type="text" id="idTaskName" name="taskname" value="">
+  <br>
+  <label for="idTaskDescription">Task description:</label>
+  <br>
+  <textarea rows="4" cols="50" id="idTaskDescription" name="taskdescription" value=""></textarea>
+  <br>
+  <label for="idTaskWeight">Task asdWeight (0-100 %):</label>
+  <br>
+  <input role="input" aria-required="true" aria-invalid="true" type="number" id="idTaskWeight" name="taskweight" value="">
+  <br>
+  <input type="submit" value="Save" aria-labelledby="newGradedTask">
+</form>
