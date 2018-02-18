@@ -142,3 +142,21 @@ font-size: 3vh;
 .form__save--color:hover{
     background-color: #000;
 }
+.form__saveTask{
+    border-radius: 9em;
+    padding: 1em 0;
+    width: 12em;
+    border: none;
+    margin-left: 40%;
+    font-size: 15px;
+    font-weight: bold;
+}
+.form__saveTask--color{
+    color: white;
+    background: #26006A;
+    transition: all .3s ease;
+    transition-timing-function: ease;
+}
+.form__saveTask--color:hover{
+    background-color: #000;
+}
