@@ -16,6 +16,7 @@ function hashcode(str) {
 function getElementTd(text) {
   let tdEl = document.createElement('td');
   tdEl.setAttribute('role','cell');
+  tdEl.setAttribute('class','tableRow__cell');
   let t = text;
   if (typeof text === 'string' || typeof text === 'number') {
     t = document.createTextNode(text); // Create a text node

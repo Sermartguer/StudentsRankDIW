@@ -52,7 +52,7 @@ class Context {
       localStorage.setItem('students',JSON.stringify(this.students));
       let GRADED_TASKS = '';
       this.gradedTasks.forEach(function(taskItem) {
-        GRADED_TASKS += '<th role="columnheader">' + taskItem.name + '</th>';
+        GRADED_TASKS += '<th role="columnheader" class="rowheader__columnHeader">' + taskItem.name + '</th>';
       });
 
       loadTemplate('templates/rankingList.html',function(responseText) {

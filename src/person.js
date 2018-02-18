@@ -64,6 +64,7 @@ class Person {
   getHTMLView() {
     let liEl = document.createElement('tr');
     liEl.setAttribute('role','row');
+    liEl.setAttribute('class','tableRow');
     let esEL = getElementTd(this.surname + ', ' + this.name);
     esEL.addEventListener('click', () => {
       loadTemplate('templates/detailStudent.html',function(responseText) {

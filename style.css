@@ -1,2 +1,144 @@
 /* Styles go here */
+*{
+    padding: 0;
+    margin: 0;
+    font-family:Roboto, sans-serif;
+    letter-spacing: .02em;
+}
+body{
+    background: linear-gradient(to bottom, #6300c8 0%, #36d3fe 100%) #9000ff;
+    height: 100vh;
+}
+.header{
+    background-color: #fff;
+    padding: .2em 0;
+    width: 100%;
+}
+.navSection{
+    display: flex;
+    justify-content: center;
+    margin: 1em 0;
+}
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    align-items: center;
+}
+.navigation__title{
+    text-decoration: none;
+    font-size: 25px;
+}
+.navigation__title--size{
+    color: #36d3fe;
+}
+.navigation__items{
+    display: flex;
+    list-style: none;
+    width: 30%;
+}
+.item{
+    border-radius: 9em;
+    text-align: center;
+    padding: 1em 0;
+    width: 12em;
+    border: none;
+    margin-left: 1em;
+}
+.item__button{
+    color: white;
+    font-weight: 400;
+}
+.item__student--color{
+    background:#0052FF;
+    transition: all .3s ease;
+    transition-timing-function: ease;
+}
+.item__student--color:hover {
+    background-color: #0024d3;
+}
+.item__task--color{
+    background:#0052FF;
+    transition: all .3s ease;
+    transition-timing-function: ease;
+}
+.item__task--color:hover{
+    background-color: #0024d3;
+}
+.wrap{
+    display: flex;
+    justify-content: center;
+    width: auto;
+    align-items: center;
+    height: 80vh;
+}
+.wrap__containter{    
+    background-color: #fff;
+    border-radius: .2em;
+    margin: 0 .5em;
+    padding: 3em;
+}
+.table{
+    border-collapse: collapse;
+}
+.rowheader{
+    border-bottom: 1px solid #f2f2f2;
+}
 
+.rowheader__columnHeader{
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #333333;
+    padding-left: 40px;
+    padding-bottom: 21px;
+}
+
+.tableRow{
+    border-bottom: 1px solid #f2f2f2;
+}
+.tableRow__cell{
+    padding-top: 21px;
+    padding-bottom: 21px;
+    padding-left: 40px;
+    color: #666666;
+}
+.titleForm{
+font-size: 3vh;
+}
+.titleForm--color{
+    color: #666666;
+}
+.form{
+    display:flex;
+    flex-direction: column;
+}
+.form__label{
+    font-size: 1.5vh;
+}
+.form__label--color{
+    color: #666666;
+}
+.form__input{
+    padding: .5vh;
+    margin-right:1vh;
+    margin-top:1vh;
+    margin-bottom:1vh;
+}
+.form__save{
+    border-radius: 9em;
+    padding: 1em 0;
+    width: 12em;
+    border: none;
+    margin-left: 10%;
+    font-size: 15px;
+    font-weight: bold;
+}
+.form__save--color{
+    color: white;
+    background: #26006A;
+    transition: all .3s ease;
+    transition-timing-function: ease;
+}
+.form__save--color:hover{
+    background-color: #000;
+}
