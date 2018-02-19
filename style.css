@@ -35,7 +35,7 @@ body{
 .navigation__items{
     display: flex;
     list-style: none;
-    width: 30%;
+
 }
 .item{
     border-radius: 9em;
@@ -80,6 +80,9 @@ body{
 }
 .table{
     border-collapse: collapse;
+    overflow-x: auto;
+    display: block;
+    width: fit-content;
 }
 .rowheader{
     border-bottom: 1px solid #f2f2f2;
@@ -159,4 +162,47 @@ font-size: 3vh;
 }
 .form__saveTask--color:hover{
     background-color: #000;
+}
+
+@media only screen and (min-width: 1280px) {
+
+}
+@media only screen and (max-width: 1280px) {
+
+}
+@media only screen and (max-width: 1024px) {
+    .wrap__containter{
+        overflow-x: auto;
+        width: 100%;
+    }
+    .table{
+        width: 100%;
+    }
+    .tableRow__cell{
+        width: 5px;
+    }
+    .notification{
+        display: inline !important;
+    }
+    .navigation{
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+    .navigation__items{
+       margin-right: 1vh;
+    }
+
+}
+@media only screen and (max-width: 768px) {
+    .navigation{
+        flex-direction: column;
+    }
+    .navigation__items{
+        margin-top:2vh;
+        margin-bottom:2vh;
+    }
+}
+@media only screen and (max-width: 480px) {
+
 }
