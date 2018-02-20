@@ -109,10 +109,6 @@ class Context {
     loadTemplate('templates/addStudent.html',callback);
   }
   /** Add last action performed to lower information layer in main app */
-
-  notify(text) {
-    document.getElementById('notify').innerHTML = text;
-  }
 }
 
 export let context = new Context(); //Singleton export

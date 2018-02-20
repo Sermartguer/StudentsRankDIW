@@ -7,7 +7,7 @@
 }
 body{
     background: linear-gradient(to bottom, #6300c8 0%, #36d3fe 100%) #9000ff;
-    height: 100vh;
+    height: 100%;
 }
 .header{
     background-color: #fff;
@@ -35,7 +35,6 @@ body{
 .navigation__items{
     display: flex;
     list-style: none;
-
 }
 .item{
     border-radius: 9em;
@@ -70,7 +69,9 @@ body{
     justify-content: center;
     width: auto;
     align-items: center;
-    height: 80vh;
+    min-height: 80vh;
+    height: auto;
+   
 }
 .wrap__containter{    
     background-color: #fff;
@@ -163,7 +164,34 @@ font-size: 3vh;
 .form__saveTask--color:hover{
     background-color: #000;
 }
-
+.xpbutton{
+    border:none;
+    padding: 1vh;
+    border-radius:.5vh;
+    cursor: pointer;
+}
+.xpbutton--color{
+    color:white;
+    background: #0052FF;
+    transition: all .3s ease;
+    transition-timing-function: ease;
+}
+.xpbutton--color:hover{
+    color:white;
+    background: #666666;
+}
+.footer{
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    margin-top: 5vh;
+}
+.footer--color{
+    background-color: white;
+}
 @media only screen and (min-width: 1280px) {
 
 }
@@ -174,6 +202,7 @@ font-size: 3vh;
     .wrap__containter{
         overflow-x: auto;
         width: 100%;
+        margin-top: 5vh;
     }
     .table{
         width: 100%;

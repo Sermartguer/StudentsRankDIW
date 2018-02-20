@@ -55,7 +55,6 @@ class Person {
   addAttitudeTask(taskInstance) {
     this.attitudeTasks.push({'task':taskInstance});
     this[privateAddTotalPoints](parseInt(taskInstance.points));
-    context.notify('Added ' + taskInstance.description + ' to ' + this.name + ',' + this.surname);
   }
 
   /** Renders HTML person view Create a table row (tr) with
@@ -74,6 +73,7 @@ class Person {
     let addAttitudeTaskEl = document.createElement('button');
     let tb = document.createTextNode('+XP');
     addAttitudeTaskEl.setAttribute('role','button');
+    addAttitudeTaskEl.setAttribute('class','xpbutton xpbutton--color');
     addAttitudeTaskEl.appendChild(tb);
 
     liEl.appendChild(getElementTd(addAttitudeTaskEl));
