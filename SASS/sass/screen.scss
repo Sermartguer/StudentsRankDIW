@@ -8,6 +8,9 @@
 * Footer -- Estils relacionats amb el footer
 * Media Queries -- Estils responsive
 */
+@import "_mixin";
+@import "_variables";
+@import "_transitions";
 *{
     padding: 0;
     margin: 0;
@@ -61,20 +64,18 @@
     font-weight: 400;
 }
 .item__student--color{
-    background:#0052FF;
-    transition: all .3s ease;
-    transition-timing-function: ease;
+    background:$pricipalColor;
+    @include setTransition(all, .3s, ease);
 }
 .item__student--color:hover {
-    background-color: #0024d3;
+    background-color: $buttonHover;
 }
 .item__task--color{
-    background:#0052FF;
-    transition: all .3s ease;
-    transition-timing-function: ease;
+    background:$pricipalColor;
+    @include setTransition(all, .3s, ease);
 }
 .item__task--color:hover{
-    background-color: #0024d3;
+    background-color: $buttonHover;
 }
 /*Wrap*/
 .wrap{
@@ -118,7 +119,7 @@
     padding-top: 21px;
     padding-bottom: 21px;
     padding-left: 40px;
-    color: #666666;
+    color: $textColor;
 }
 .xpbutton{
     border:none;
@@ -128,20 +129,19 @@
 }
 .xpbutton--color{
     color:white;
-    background: #0052FF;
-    transition: all .3s ease;
-    transition-timing-function: ease;
+    background: $pricipalColor;
+    @include setTransition(all, .3s, ease);
 }
 .xpbutton--color:hover{
     color:white;
-    background: #666666;
+    background: $textColor;
 }
 /*Form*/
 .titleForm{
-font-size: 3vh;
+  font-size: 3vh;
 }
 .titleForm--color{
-    color: #666666;
+    color: $textColor;
 }
 .form{
     display:flex;
@@ -151,7 +151,7 @@ font-size: 3vh;
     font-size: 1.5vh;
 }
 .form__label--color{
-    color: #666666;
+    color: $textColor;
 }
 .form__input{
     padding: .5vh;
@@ -170,12 +170,11 @@ font-size: 3vh;
 }
 .form__save--color{
     color: white;
-    background: #26006A;
-    transition: all .3s ease;
-    transition-timing-function: ease;
+    background: $buttonForm;
+    @include setTransition(all, .3s, ease);
 }
 .form__save--color:hover{
-    background-color: #000;
+    background-color: $buttonFormHover;
 }
 .form__saveTask{
     border-radius: 9em;
@@ -188,12 +187,11 @@ font-size: 3vh;
 }
 .form__saveTask--color{
     color: white;
-    background: #26006A;
-    transition: all .3s ease;
-    transition-timing-function: ease;
+    background: $buttonForm;
+    @include setTransition(all, .3s, ease);
 }
 .form__saveTask--color:hover{
-    background-color: #000;
+    background-color: $buttonFormHover;
 }
 /*Footer*/
 .footer{
@@ -210,16 +208,9 @@ font-size: 3vh;
 }
 
 /*Media Queries*/
-@media only screen and (min-width: 1280px) {
-
-}
-@media only screen and (max-width: 1280px) {
-
-}
-@media only screen and (max-width: 1024px) {
+@include media(md) {
     .wrap__containter{
         overflow-x: auto;
-        width: 100%;
         margin-top: 5vh;
     }
     .table{
@@ -227,9 +218,6 @@ font-size: 3vh;
     }
     .tableRow__cell{
         width: 5px;
-    }
-    .notification{
-        display: inline !important;
     }
     .navigation{
         flex-wrap: wrap;
@@ -239,17 +227,19 @@ font-size: 3vh;
     .navigation__items{
        margin-right: 1vh;
     }
-
-}
-@media only screen and (max-width: 768px) {
-    .navigation{
-        flex-direction: column;
-    }
-    .navigation__items{
-        margin-top:2vh;
-        margin-bottom:2vh;
-    }
-}
-@media only screen and (max-width: 480px) {
-
+  }
+@include media(lg) {
+  .navigation{
+      flex-direction: column;
+  }
+  .wrap__containter{
+    width: 100%;
+  }
+  .navigation__items{
+      margin-top:2vh;
+      margin-bottom:2vh;
+  }
+  .notification{
+      display: inline !important;
+  }
 }

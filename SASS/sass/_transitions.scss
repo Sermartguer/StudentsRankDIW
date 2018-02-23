@@ -1,0 +1,4 @@
+@mixin setTransition($property,$duration,$timing:'linear'){
+  transition: $property $duration $timing;
+  transition-timing-function: $timing;
+}
