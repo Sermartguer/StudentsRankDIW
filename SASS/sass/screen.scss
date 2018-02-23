@@ -52,7 +52,7 @@
 }
 /*Navigation/Item */
 .item{
-    border-radius: 9em;
+    border-radius: 0.5em;
     text-align: center;
     padding: 1em 0;
     width: 12em;
@@ -202,11 +202,31 @@
     width: 100%;
     height: 100px;
     margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
 }
 .footer--color{
     background-color: white;
 }
-
+.topMeu{
+    display: flex;
+    justify-content: center;
+}
+.topMeu__item{
+    color: $textColor;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 1.5vh;
+    padding-top: 2vh;
+}
+.botMenu{
+    display: flex;
+    justify-content: center;
+    padding-top: 1vh;
+}
+.botMenu__item{
+    margin-left: 1.5vh;
+}
 /*Media Queries*/
 @include media(md) {
     .wrap__containter{

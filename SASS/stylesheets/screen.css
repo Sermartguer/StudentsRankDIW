@@ -67,7 +67,7 @@
 /*Navigation/Item */
 /* line 54, ../sass/screen.scss */
 .item {
-  border-radius: 9em;
+  border-radius: 0.5em;
   text-align: center;
   padding: 1em 0;
   width: 12em;
@@ -275,61 +275,90 @@
   width: 100%;
   height: 100px;
   margin-top: 5vh;
+  display: flex;
+  flex-direction: column;
 }
 
-/* line 206, ../sass/screen.scss */
+/* line 208, ../sass/screen.scss */
 .footer--color {
   background-color: white;
 }
 
+/* line 211, ../sass/screen.scss */
+.topMeu {
+  display: flex;
+  justify-content: center;
+}
+
+/* line 215, ../sass/screen.scss */
+.topMeu__item {
+  color: #666666;
+  font-weight: bold;
+  text-decoration: none;
+  margin-left: 1.5vh;
+  padding-top: 2vh;
+}
+
+/* line 222, ../sass/screen.scss */
+.botMenu {
+  display: flex;
+  justify-content: center;
+  padding-top: 1vh;
+}
+
+/* line 227, ../sass/screen.scss */
+.botMenu__item {
+  margin-left: 1.5vh;
+}
+
 /*Media Queries*/
 @media (max-width: 1024px) {
-  /* line 212, ../sass/screen.scss */
+  /* line 232, ../sass/screen.scss */
   .wrap__containter {
     overflow-x: auto;
     margin-top: 5vh;
   }
 
-  /* line 216, ../sass/screen.scss */
+  /* line 236, ../sass/screen.scss */
   .table {
     width: 100%;
   }
 
-  /* line 219, ../sass/screen.scss */
+  /* line 239, ../sass/screen.scss */
   .tableRow__cell {
     width: 5px;
   }
 
-  /* line 222, ../sass/screen.scss */
+  /* line 242, ../sass/screen.scss */
   .navigation {
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
   }
 
-  /* line 227, ../sass/screen.scss */
+  /* line 247, ../sass/screen.scss */
   .navigation__items {
     margin-right: 1vh;
   }
 }
 @media (max-width: 768px) {
-  /* line 232, ../sass/screen.scss */
+  /* line 252, ../sass/screen.scss */
   .navigation {
     flex-direction: column;
   }
 
-  /* line 235, ../sass/screen.scss */
+  /* line 255, ../sass/screen.scss */
   .wrap__containter {
     width: 100%;
   }
 
-  /* line 238, ../sass/screen.scss */
+  /* line 258, ../sass/screen.scss */
   .navigation__items {
     margin-top: 2vh;
     margin-bottom: 2vh;
   }
 
-  /* line 242, ../sass/screen.scss */
+  /* line 262, ../sass/screen.scss */
   .notification {
     display: inline !important;
   }

@@ -49,7 +49,7 @@
 }
 /*Navigation/Item */
 .item{
-    border-radius: 9em;
+    border-radius: .5em;
     text-align: center;
     padding: 1em 0;
     width: 12em;
