@@ -6,10 +6,11 @@
 * Wrap -- Referent a la base de la seccio de continguts, base per a la taula i formularis
 * Table -- Configuracio d'estils de la taula
 * Form -- Configuracio i estils dels formularis
+* AttitudeTasks 
 * Footer -- Estils relacionats amb el footer
 * Media Queries -- Estils responsive
 */
-/* line 14, ../sass/screen.scss */
+/* line 15, ../sass/screen.scss */
 * {
   padding: 0;
   margin: 0;
@@ -17,21 +18,21 @@
   letter-spacing: .02em;
 }
 
-/* line 20, ../sass/screen.scss */
+/* line 21, ../sass/screen.scss */
 .body {
   background: linear-gradient(to bottom, #6300c8 0%, #36d3fe 100%) #9000ff;
   height: 100%;
 }
 
 /*Header*/
-/* line 25, ../sass/screen.scss */
+/* line 26, ../sass/screen.scss */
 .header {
   background-color: #fff;
   padding: .2em 0;
   width: 100%;
 }
 
-/* line 30, ../sass/screen.scss */
+/* line 31, ../sass/screen.scss */
 .navSection {
   display: flex;
   justify-content: center;
@@ -39,7 +40,7 @@
 }
 
 /*Navigation*/
-/* line 36, ../sass/screen.scss */
+/* line 37, ../sass/screen.scss */
 .navigation {
   display: flex;
   justify-content: space-between;
@@ -47,24 +48,28 @@
   align-items: center;
 }
 
-/* line 42, ../sass/screen.scss */
+/* line 43, ../sass/screen.scss */
 .navigation__title {
   text-decoration: none;
   font-size: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-/* line 46, ../sass/screen.scss */
+/* line 51, ../sass/screen.scss */
 .navigation__title--size {
-  color: #36d3fe;
+  color: #0052FF;
 }
 
-/* line 49, ../sass/screen.scss */
+/* line 54, ../sass/screen.scss */
 .navigation__items {
   display: flex;
   list-style: none;
 }
 
-/* line 53, ../sass/screen.scss */
+/* line 58, ../sass/screen.scss */
 .show-menu {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-decoration: none;
@@ -75,20 +80,23 @@
   min-width: 5vh;
 }
 
-/*Hide checkbox*/
-/* line 63, ../sass/screen.scss */
+/* line 67, ../sass/screen.scss */
 input[type=checkbox] {
   display: none;
 }
 
-/*Show menu when invisible checkbox is checked*/
-/* line 67, ../sass/screen.scss */
+/* line 70, ../sass/screen.scss */
 input[type=checkbox]:checked ~ .navigation__items {
   display: block;
 }
 
+/* line 73, ../sass/screen.scss */
+.author {
+  text-decoration: none;
+}
+
 /*Navigation/Item */
-/* line 71, ../sass/screen.scss */
+/* line 77, ../sass/screen.scss */
 .item {
   border-radius: 0.5em;
   text-align: center;
@@ -98,38 +106,38 @@ input[type=checkbox]:checked ~ .navigation__items {
   margin-left: 1em;
 }
 
-/* line 79, ../sass/screen.scss */
+/* line 85, ../sass/screen.scss */
 .item__button {
   color: white;
   font-weight: 400;
 }
 
-/* line 83, ../sass/screen.scss */
+/* line 89, ../sass/screen.scss */
 .item__student--color {
   background: #0052FF;
   transition: all 0.3s ease;
   transition-timing-function: ease;
 }
 
-/* line 87, ../sass/screen.scss */
+/* line 93, ../sass/screen.scss */
 .item__student--color:hover {
   background-color: #0024d3;
 }
 
-/* line 90, ../sass/screen.scss */
+/* line 96, ../sass/screen.scss */
 .item__task--color {
   background: #0052FF;
   transition: all 0.3s ease;
   transition-timing-function: ease;
 }
 
-/* line 94, ../sass/screen.scss */
+/* line 100, ../sass/screen.scss */
 .item__task--color:hover {
   background-color: #0024d3;
 }
 
 /*Wrap*/
-/* line 98, ../sass/screen.scss */
+/* line 104, ../sass/screen.scss */
 .wrap {
   display: flex;
   justify-content: center;
@@ -139,7 +147,7 @@ input[type=checkbox]:checked ~ .navigation__items {
   height: auto;
 }
 
-/* line 107, ../sass/screen.scss */
+/* line 113, ../sass/screen.scss */
 .wrap__containter {
   background-color: #fff;
   border-radius: .2em;
@@ -148,7 +156,7 @@ input[type=checkbox]:checked ~ .navigation__items {
 }
 
 /*Table*/
-/* line 114, ../sass/screen.scss */
+/* line 120, ../sass/screen.scss */
 .table {
   border-collapse: collapse;
   overflow-x: auto;
@@ -156,12 +164,12 @@ input[type=checkbox]:checked ~ .navigation__items {
   width: fit-content;
 }
 
-/* line 120, ../sass/screen.scss */
+/* line 126, ../sass/screen.scss */
 .rowheader {
   border-bottom: 1px solid #f2f2f2;
 }
 
-/* line 124, ../sass/screen.scss */
+/* line 130, ../sass/screen.scss */
 .rowheader__columnHeader {
   text-transform: uppercase;
   font-size: 14px;
@@ -170,12 +178,12 @@ input[type=checkbox]:checked ~ .navigation__items {
   padding-bottom: 21px;
 }
 
-/* line 132, ../sass/screen.scss */
+/* line 138, ../sass/screen.scss */
 .tableRow {
   border-bottom: 1px solid #f2f2f2;
 }
 
-/* line 135, ../sass/screen.scss */
+/* line 141, ../sass/screen.scss */
 .tableRow__cell {
   padding-top: 21px;
   padding-bottom: 21px;
@@ -183,7 +191,7 @@ input[type=checkbox]:checked ~ .navigation__items {
   color: #666666;
 }
 
-/* line 141, ../sass/screen.scss */
+/* line 147, ../sass/screen.scss */
 .xpbutton {
   border: none;
   padding: 1vh;
@@ -191,7 +199,7 @@ input[type=checkbox]:checked ~ .navigation__items {
   cursor: pointer;
 }
 
-/* line 147, ../sass/screen.scss */
+/* line 153, ../sass/screen.scss */
 .xpbutton--color {
   color: white;
   background: #0052FF;
@@ -199,40 +207,40 @@ input[type=checkbox]:checked ~ .navigation__items {
   transition-timing-function: ease;
 }
 
-/* line 152, ../sass/screen.scss */
+/* line 158, ../sass/screen.scss */
 .xpbutton--color:hover {
   color: white;
   background: #666666;
 }
 
 /*Form*/
-/* line 157, ../sass/screen.scss */
+/* line 163, ../sass/screen.scss */
 .titleForm {
   font-size: 3vh;
 }
 
-/* line 160, ../sass/screen.scss */
+/* line 166, ../sass/screen.scss */
 .titleForm--color {
   color: #666666;
 }
 
-/* line 163, ../sass/screen.scss */
+/* line 169, ../sass/screen.scss */
 .form {
   display: flex;
   flex-direction: column;
 }
 
-/* line 167, ../sass/screen.scss */
+/* line 173, ../sass/screen.scss */
 .form__label {
   font-size: 1.5vh;
 }
 
-/* line 170, ../sass/screen.scss */
+/* line 176, ../sass/screen.scss */
 .form__label--color {
   color: #666666;
 }
 
-/* line 173, ../sass/screen.scss */
+/* line 179, ../sass/screen.scss */
 .form__input {
   padding: .5vh;
   margin-right: 1vh;
@@ -240,7 +248,7 @@ input[type=checkbox]:checked ~ .navigation__items {
   margin-bottom: 1vh;
 }
 
-/* line 179, ../sass/screen.scss */
+/* line 185, ../sass/screen.scss */
 .form__save {
   border-radius: 9em;
   padding: 1em 0;
@@ -251,7 +259,7 @@ input[type=checkbox]:checked ~ .navigation__items {
   margin: 0 auto;
 }
 
-/* line 188, ../sass/screen.scss */
+/* line 194, ../sass/screen.scss */
 .form__save--color {
   color: white;
   background: #26006A;
@@ -259,12 +267,12 @@ input[type=checkbox]:checked ~ .navigation__items {
   transition-timing-function: ease;
 }
 
-/* line 193, ../sass/screen.scss */
+/* line 199, ../sass/screen.scss */
 .form__save--color:hover {
   background-color: #000;
 }
 
-/* line 196, ../sass/screen.scss */
+/* line 202, ../sass/screen.scss */
 .form__saveTask {
   border-radius: 9em;
   padding: 1em 0;
@@ -275,7 +283,7 @@ input[type=checkbox]:checked ~ .navigation__items {
   margin: 0 auto;
 }
 
-/* line 205, ../sass/screen.scss */
+/* line 211, ../sass/screen.scss */
 .form__saveTask--color {
   color: white;
   background: #26006A;
@@ -283,13 +291,64 @@ input[type=checkbox]:checked ~ .navigation__items {
   transition-timing-function: ease;
 }
 
-/* line 210, ../sass/screen.scss */
+/* line 216, ../sass/screen.scss */
 .form__saveTask--color:hover {
   background-color: #000;
 }
 
+/*AttitudeTasks*/
+/* line 220, ../sass/screen.scss */
+.attitude {
+  display: flex;
+  flex-direction: column;
+}
+
+/* line 225, ../sass/screen.scss */
+.attitude__positive {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* line 230, ../sass/screen.scss */
+.attitude__positive__button {
+  border: none;
+  margin: 1vh;
+  border-radius: 2vh;
+  width: 90%;
+  padding: 2vh;
+}
+
+/* line 237, ../sass/screen.scss */
+.attitude__negative {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* line 242, ../sass/screen.scss */
+.attitude__positive__button--color {
+  color: white;
+  background: mediumseagreen;
+}
+
+/* line 246, ../sass/screen.scss */
+.attitude__negative__button {
+  border: none;
+  margin: 1vh;
+  border-radius: 2vh;
+  width: 90%;
+  padding: 2vh;
+}
+
+/* line 253, ../sass/screen.scss */
+.attitude__negative__button--color {
+  color: white;
+  background: tomato;
+}
+
 /*Footer*/
-/* line 214, ../sass/screen.scss */
+/* line 259, ../sass/screen.scss */
 .footer {
   top: 0;
   right: 0;
@@ -302,18 +361,18 @@ input[type=checkbox]:checked ~ .navigation__items {
   flex-direction: column;
 }
 
-/* line 225, ../sass/screen.scss */
+/* line 270, ../sass/screen.scss */
 .footer--color {
   background-color: white;
 }
 
-/* line 228, ../sass/screen.scss */
+/* line 273, ../sass/screen.scss */
 .topMeu {
   display: flex;
   justify-content: center;
 }
 
-/* line 232, ../sass/screen.scss */
+/* line 277, ../sass/screen.scss */
 .topMeu__item {
   color: #666666;
   font-weight: bold;
@@ -322,66 +381,71 @@ input[type=checkbox]:checked ~ .navigation__items {
   padding-top: 2vh;
 }
 
-/* line 239, ../sass/screen.scss */
+/* line 284, ../sass/screen.scss */
 .botMenu {
   display: flex;
   justify-content: center;
   padding-top: 1vh;
 }
 
-/* line 244, ../sass/screen.scss */
+/* line 289, ../sass/screen.scss */
 .botMenu__item {
   margin-left: 1.5vh;
 }
 
+/* line 292, ../sass/screen.scss */
+.botMenu__item > img:hover {
+  transform: rotate(7deg);
+}
+
 /*Media Queries*/
 @media (max-width: 1024px) {
-  /* line 249, ../sass/screen.scss */
+  /* line 297, ../sass/screen.scss */
   .wrap__containter {
     overflow-x: auto;
     margin-top: 5vh;
   }
 
-  /* line 253, ../sass/screen.scss */
+  /* line 301, ../sass/screen.scss */
   .table {
     width: 100%;
   }
 
-  /* line 256, ../sass/screen.scss */
+  /* line 304, ../sass/screen.scss */
   .tableRow__cell {
     width: 5px;
   }
 
-  /* line 259, ../sass/screen.scss */
+  /* line 307, ../sass/screen.scss */
   .navigation {
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
   }
 
-  /* line 264, ../sass/screen.scss */
+  /* line 312, ../sass/screen.scss */
   .navigation__items {
     margin-right: 1vh;
   }
 }
 @media (max-width: 768px) {
-  /* line 270, ../sass/screen.scss */
+  /* line 318, ../sass/screen.scss */
   .navigation {
     flex-direction: row;
     justify-content: space-around;
   }
 
-  /* line 274, ../sass/screen.scss */
+  /* line 322, ../sass/screen.scss */
   .author {
     display: none;
   }
 
-  /* line 277, ../sass/screen.scss */
+  /* line 325, ../sass/screen.scss */
   .wrap__containter {
     width: 100%;
   }
 
-  /* line 280, ../sass/screen.scss */
+  /* line 328, ../sass/screen.scss */
   .navigation__items {
     margin-top: 3vh;
     margin-bottom: 3vh;
@@ -392,26 +456,26 @@ input[type=checkbox]:checked ~ .navigation__items {
     justify-content: center;
   }
 
-  /* line 289, ../sass/screen.scss */
+  /* line 337, ../sass/screen.scss */
   .notification {
     display: inline !important;
   }
 
-  /* line 292, ../sass/screen.scss */
+  /* line 340, ../sass/screen.scss */
   .show-menu {
     display: block;
     width: 3em;
     margin: 2vh;
   }
 
-  /* line 297, ../sass/screen.scss */
+  /* line 345, ../sass/screen.scss */
   .item {
     margin: 1vh;
     width: 30em;
   }
 }
 @media (max-width: 480px) {
-  /* line 303, ../sass/screen.scss */
+  /* line 351, ../sass/screen.scss */
   .navigation__items {
     margin-top: 3vh;
     margin-bottom: 3vh;
@@ -419,7 +483,7 @@ input[type=checkbox]:checked ~ .navigation__items {
     margin-right: 0vh;
   }
 
-  /* line 309, ../sass/screen.scss */
+  /* line 357, ../sass/screen.scss */
   .item {
     width: 23em;
   }

@@ -5,6 +5,7 @@
 * Wrap -- Referent a la base de la seccio de continguts, base per a la taula i formularis
 * Table -- Configuracio d'estils de la taula
 * Form -- Configuracio i estils dels formularis
+* AttitudeTasks 
 * Footer -- Estils relacionats amb el footer
 * Media Queries -- Estils responsive
 */
@@ -42,9 +43,13 @@
 .navigation__title{
     text-decoration: none;
     font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .navigation__title--size{
-    color: #36d3fe;
+    color: $pricipalColor;
 }
 .navigation__items{
     display: flex;
@@ -59,13 +64,14 @@
     display: none;
     min-width: 5vh;
 }
-/*Hide checkbox*/
 input[type=checkbox]{
     display: none;
 }
-/*Show menu when invisible checkbox is checked*/
 input[type=checkbox]:checked ~ .navigation__items{
     display: block;
+}
+.author{
+    text-decoration: none;
 }
 /*Navigation/Item */
 .item{
@@ -210,6 +216,45 @@ input[type=checkbox]:checked ~ .navigation__items{
 .form__saveTask--color:hover{
     background-color: $buttonFormHover;
 }
+/*AttitudeTasks*/
+.attitude{
+    display: flex;
+    flex-direction: column;
+    
+}
+.attitude__positive{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.attitude__positive__button{
+    border: none;
+    margin: 1vh;
+    border-radius: 2vh;
+    width: 90%;
+    padding: 2vh;
+}
+.attitude__negative{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.attitude__positive__button--color{
+    color: white;
+    background: mediumseagreen;
+}
+.attitude__negative__button{
+    border: none;
+    margin: 1vh;
+    border-radius: 2vh;
+    width: 90%;
+    padding: 2vh;
+}
+.attitude__negative__button--color{
+    color: white;
+    background: tomato;
+}
+
 /*Footer*/
 .footer{
     top: 0;
@@ -243,6 +288,9 @@ input[type=checkbox]:checked ~ .navigation__items{
 }
 .botMenu__item{
     margin-left: 1.5vh;
+}
+.botMenu__item>img:hover{
+    transform: rotate(7deg);
 }
 /*Media Queries*/
 @include media(md) {
