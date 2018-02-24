@@ -64,8 +64,31 @@
   list-style: none;
 }
 
+/* line 53, ../sass/screen.scss */
+.show-menu {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  display: none;
+  min-width: 5vh;
+}
+
+/*Hide checkbox*/
+/* line 63, ../sass/screen.scss */
+input[type=checkbox] {
+  display: none;
+}
+
+/*Show menu when invisible checkbox is checked*/
+/* line 67, ../sass/screen.scss */
+input[type=checkbox]:checked ~ .navigation__items {
+  display: block;
+}
+
 /*Navigation/Item */
-/* line 54, ../sass/screen.scss */
+/* line 71, ../sass/screen.scss */
 .item {
   border-radius: 0.5em;
   text-align: center;
@@ -75,38 +98,38 @@
   margin-left: 1em;
 }
 
-/* line 62, ../sass/screen.scss */
+/* line 79, ../sass/screen.scss */
 .item__button {
   color: white;
   font-weight: 400;
 }
 
-/* line 66, ../sass/screen.scss */
+/* line 83, ../sass/screen.scss */
 .item__student--color {
   background: #0052FF;
   transition: all 0.3s ease;
   transition-timing-function: ease;
 }
 
-/* line 70, ../sass/screen.scss */
+/* line 87, ../sass/screen.scss */
 .item__student--color:hover {
   background-color: #0024d3;
 }
 
-/* line 73, ../sass/screen.scss */
+/* line 90, ../sass/screen.scss */
 .item__task--color {
   background: #0052FF;
   transition: all 0.3s ease;
   transition-timing-function: ease;
 }
 
-/* line 77, ../sass/screen.scss */
+/* line 94, ../sass/screen.scss */
 .item__task--color:hover {
   background-color: #0024d3;
 }
 
 /*Wrap*/
-/* line 81, ../sass/screen.scss */
+/* line 98, ../sass/screen.scss */
 .wrap {
   display: flex;
   justify-content: center;
@@ -116,7 +139,7 @@
   height: auto;
 }
 
-/* line 90, ../sass/screen.scss */
+/* line 107, ../sass/screen.scss */
 .wrap__containter {
   background-color: #fff;
   border-radius: .2em;
@@ -125,7 +148,7 @@
 }
 
 /*Table*/
-/* line 97, ../sass/screen.scss */
+/* line 114, ../sass/screen.scss */
 .table {
   border-collapse: collapse;
   overflow-x: auto;
@@ -133,12 +156,12 @@
   width: fit-content;
 }
 
-/* line 103, ../sass/screen.scss */
+/* line 120, ../sass/screen.scss */
 .rowheader {
   border-bottom: 1px solid #f2f2f2;
 }
 
-/* line 107, ../sass/screen.scss */
+/* line 124, ../sass/screen.scss */
 .rowheader__columnHeader {
   text-transform: uppercase;
   font-size: 14px;
@@ -147,12 +170,12 @@
   padding-bottom: 21px;
 }
 
-/* line 115, ../sass/screen.scss */
+/* line 132, ../sass/screen.scss */
 .tableRow {
   border-bottom: 1px solid #f2f2f2;
 }
 
-/* line 118, ../sass/screen.scss */
+/* line 135, ../sass/screen.scss */
 .tableRow__cell {
   padding-top: 21px;
   padding-bottom: 21px;
@@ -160,7 +183,7 @@
   color: #666666;
 }
 
-/* line 124, ../sass/screen.scss */
+/* line 141, ../sass/screen.scss */
 .xpbutton {
   border: none;
   padding: 1vh;
@@ -168,7 +191,7 @@
   cursor: pointer;
 }
 
-/* line 130, ../sass/screen.scss */
+/* line 147, ../sass/screen.scss */
 .xpbutton--color {
   color: white;
   background: #0052FF;
@@ -176,40 +199,40 @@
   transition-timing-function: ease;
 }
 
-/* line 135, ../sass/screen.scss */
+/* line 152, ../sass/screen.scss */
 .xpbutton--color:hover {
   color: white;
   background: #666666;
 }
 
 /*Form*/
-/* line 140, ../sass/screen.scss */
+/* line 157, ../sass/screen.scss */
 .titleForm {
   font-size: 3vh;
 }
 
-/* line 143, ../sass/screen.scss */
+/* line 160, ../sass/screen.scss */
 .titleForm--color {
   color: #666666;
 }
 
-/* line 146, ../sass/screen.scss */
+/* line 163, ../sass/screen.scss */
 .form {
   display: flex;
   flex-direction: column;
 }
 
-/* line 150, ../sass/screen.scss */
+/* line 167, ../sass/screen.scss */
 .form__label {
   font-size: 1.5vh;
 }
 
-/* line 153, ../sass/screen.scss */
+/* line 170, ../sass/screen.scss */
 .form__label--color {
   color: #666666;
 }
 
-/* line 156, ../sass/screen.scss */
+/* line 173, ../sass/screen.scss */
 .form__input {
   padding: .5vh;
   margin-right: 1vh;
@@ -217,18 +240,18 @@
   margin-bottom: 1vh;
 }
 
-/* line 162, ../sass/screen.scss */
+/* line 179, ../sass/screen.scss */
 .form__save {
   border-radius: 9em;
   padding: 1em 0;
   width: 12em;
   border: none;
-  margin-left: 10%;
   font-size: 15px;
   font-weight: bold;
+  margin: 0 auto;
 }
 
-/* line 171, ../sass/screen.scss */
+/* line 188, ../sass/screen.scss */
 .form__save--color {
   color: white;
   background: #26006A;
@@ -236,23 +259,23 @@
   transition-timing-function: ease;
 }
 
-/* line 176, ../sass/screen.scss */
+/* line 193, ../sass/screen.scss */
 .form__save--color:hover {
   background-color: #000;
 }
 
-/* line 179, ../sass/screen.scss */
+/* line 196, ../sass/screen.scss */
 .form__saveTask {
   border-radius: 9em;
   padding: 1em 0;
   width: 12em;
   border: none;
-  margin-left: 40%;
   font-size: 15px;
   font-weight: bold;
+  margin: 0 auto;
 }
 
-/* line 188, ../sass/screen.scss */
+/* line 205, ../sass/screen.scss */
 .form__saveTask--color {
   color: white;
   background: #26006A;
@@ -260,13 +283,13 @@
   transition-timing-function: ease;
 }
 
-/* line 193, ../sass/screen.scss */
+/* line 210, ../sass/screen.scss */
 .form__saveTask--color:hover {
   background-color: #000;
 }
 
 /*Footer*/
-/* line 197, ../sass/screen.scss */
+/* line 214, ../sass/screen.scss */
 .footer {
   top: 0;
   right: 0;
@@ -279,18 +302,18 @@
   flex-direction: column;
 }
 
-/* line 208, ../sass/screen.scss */
+/* line 225, ../sass/screen.scss */
 .footer--color {
   background-color: white;
 }
 
-/* line 211, ../sass/screen.scss */
+/* line 228, ../sass/screen.scss */
 .topMeu {
   display: flex;
   justify-content: center;
 }
 
-/* line 215, ../sass/screen.scss */
+/* line 232, ../sass/screen.scss */
 .topMeu__item {
   color: #666666;
   font-weight: bold;
@@ -299,67 +322,105 @@
   padding-top: 2vh;
 }
 
-/* line 222, ../sass/screen.scss */
+/* line 239, ../sass/screen.scss */
 .botMenu {
   display: flex;
   justify-content: center;
   padding-top: 1vh;
 }
 
-/* line 227, ../sass/screen.scss */
+/* line 244, ../sass/screen.scss */
 .botMenu__item {
   margin-left: 1.5vh;
 }
 
 /*Media Queries*/
 @media (max-width: 1024px) {
-  /* line 232, ../sass/screen.scss */
+  /* line 249, ../sass/screen.scss */
   .wrap__containter {
     overflow-x: auto;
     margin-top: 5vh;
   }
 
-  /* line 236, ../sass/screen.scss */
+  /* line 253, ../sass/screen.scss */
   .table {
     width: 100%;
   }
 
-  /* line 239, ../sass/screen.scss */
+  /* line 256, ../sass/screen.scss */
   .tableRow__cell {
     width: 5px;
   }
 
-  /* line 242, ../sass/screen.scss */
+  /* line 259, ../sass/screen.scss */
   .navigation {
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
   }
 
-  /* line 247, ../sass/screen.scss */
+  /* line 264, ../sass/screen.scss */
   .navigation__items {
     margin-right: 1vh;
   }
 }
 @media (max-width: 768px) {
-  /* line 252, ../sass/screen.scss */
+  /* line 270, ../sass/screen.scss */
   .navigation {
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-around;
   }
 
-  /* line 255, ../sass/screen.scss */
+  /* line 274, ../sass/screen.scss */
+  .author {
+    display: none;
+  }
+
+  /* line 277, ../sass/screen.scss */
   .wrap__containter {
     width: 100%;
   }
 
-  /* line 258, ../sass/screen.scss */
+  /* line 280, ../sass/screen.scss */
   .navigation__items {
-    margin-top: 2vh;
-    margin-bottom: 2vh;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    margin-left: 10vh;
+    margin-right: 10vh;
+    display: none;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
-  /* line 262, ../sass/screen.scss */
+  /* line 289, ../sass/screen.scss */
   .notification {
     display: inline !important;
+  }
+
+  /* line 292, ../sass/screen.scss */
+  .show-menu {
+    display: block;
+    width: 3em;
+    margin: 2vh;
+  }
+
+  /* line 297, ../sass/screen.scss */
+  .item {
+    margin: 1vh;
+    width: 30em;
+  }
+}
+@media (max-width: 480px) {
+  /* line 303, ../sass/screen.scss */
+  .navigation__items {
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    margin-left: 0vh;
+    margin-right: 0vh;
+  }
+
+  /* line 309, ../sass/screen.scss */
+  .item {
+    width: 23em;
   }
 }

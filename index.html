@@ -4,22 +4,42 @@
     <meta name="viewport" content="width=device-width, user-scalable=no">
     <title>StudentsRank - Rank Students</title>
     <link rel="stylesheet" href="SASS/stylesheets/screen.css">
+    <link rel="stylesheet" type="text/css" href="SASS/stylesheets/print.css" media="print" />
+    <link rel="apple-touch-icon" sizes="57x57" href="src/assets/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="src/assets//apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="src/assets//apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="src/assets//apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="src/assets//apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="src/assets//apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="src/assets//apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="src/assets//apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="src/assets//apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="src/assets//android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="src/assets//favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="src/assets//favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="src/assets//favicon-16x16.png">
+    <link rel="manifest" href="src/assets//manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="src/assets//ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
     <script type="text/javascript" src="dist/main.js"></script>
-
   </head>
   <body class="body">
     	<header role="banner" class="header">
         <section class="navSection">
           <nav class="navigation">
-            
             <a href="" class="navigation__title">
               <h1 class="navigation__title--size">Ranking list</h1>
             </a>
+            <label for="show-menu" class="show-menu">
+              <img src="src/assets/menu.svg" alt="Menu">
+            </label>
+            <input type="checkbox" id="show-menu" role="button">
             <ul class="navigation__items">
               <li><button class="item item__button item__student--color" role="button" id="addStudent">Add new <b>Student</b></button></li>
               <li><button class="item item__button item__task--color" role="button" id="addGradedTask">Add <b>graded task</b></button></li>
             </ul>
-            <a href="">
+            <a href="" class="author">
               Sergio Martinez
             </a>
           </nav>
@@ -40,11 +60,11 @@
               <img src="src/assets/humanstxt-isolated-blank.gif" alt="Humans.txt" width="88" height="31">
             </a>
             <div>
-              <a href="" class="botMenu__item">
-                <img src="src/assets/github-sign.svg" alt="" width="30vh">
+              <a href="https://github.com/Sermartguer" class="botMenu__item">
+                <img src="src/assets/github-sign.svg" alt="Github" width="30vh">
               </a>
-              <a href="" class="botMenu__item">
-                  <img src="src/assets/twitter.svg" alt="" width="30vh">
+              <a href="https://twitter.com/Sermartguer" class="botMenu__item">
+                  <img src="src/assets/twitter.svg" alt="Twitter" width="30vh">
                 </a>
             </div>
         </section>
